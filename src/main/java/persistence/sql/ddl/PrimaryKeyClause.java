@@ -61,7 +61,6 @@ public class PrimaryKeyClause {
                 .findAny()
                 .orElseThrow(InvalidPrimaryKeyException::new);
 
-
         idField.setAccessible(true);
         Long id;
         try {

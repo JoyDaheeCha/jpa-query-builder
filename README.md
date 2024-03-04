@@ -1,8 +1,9 @@
 # jpa-query-builder
 
 ## step 2-3
-- [ ] 요구사항 1 - PersistenceContext 구현체를 만들어 보고 1차 캐싱을 적용하기
+- [x] 요구사항 1 - PersistenceContext 구현체를 만들어 보고 1차 캐싱을 적용하기
 - [ ] 요구사항 2 - snapshot 만들기
+- [ ] 요구사항 3 - 더티체킹 구현
 ## step 2-2
 - [x] 요구사항 1 - RowMapper 리팩터링 (동적으로 RowMapper 생성하기)
 - [x] 요구사항 2 - EntityManager 의 책임 줄여주기(EntityManager 의 구현체에서 find 에 대한 책임을 EntityLoader 로 옮겨주자)
