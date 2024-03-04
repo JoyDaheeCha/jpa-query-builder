@@ -1,5 +1,8 @@
 # jpa-query-builder
 
+## step 2-1 
+- [x] 요구사항 1 - 엔터티의 데이터 페이스 매핑, 쿼리 생성 및 실행
+- [x] 요구사항 2 - EntityManager의 책임 줄여주기
 ## Step4 
 - [x] 요구사항 1 -  find
 - [x] 요구사항 2 -  persist (insert)

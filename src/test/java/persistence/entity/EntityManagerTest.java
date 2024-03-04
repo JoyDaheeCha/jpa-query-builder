@@ -15,12 +15,10 @@ import persistence.sql.ddl.CreateQueryBuilder;
 import persistence.sql.dml.InsertQueryBuilder;
 import persistence.sql.dml.SelectQueryBuilder;
 
-import java.sql.SQLException;
 import java.util.List;
 import java.util.stream.Stream;
 
 import static persistence.entity.TestFixture.person_철수_id있음;
-import static persistence.sql.ddl.common.TestSqlConstant.DROP_TABLE;
 import static persistence.entity.TestFixture.person_철수;
 import static persistence.sql.ddl.common.TestSqlConstant.DROP_TABLE_USERS;
 import static persistence.sql.dml.TestFixture.person_영희;
