@@ -1,8 +1,13 @@
 # jpa-query-builder
 
+## step 2-2
+- [x] 요구사항 1 - RowMapper 리팩터링 (동적으로 RowMapper 생성하기)
+- [x] 요구사항 2 - EntityManager 의 책임 줄여주기(EntityManager 의 구현체에서 find 에 대한 책임을 EntityLoader 로 옮겨주자)
+
 ## step 2-1 
 - [x] 요구사항 1 - 엔터티의 데이터 페이스 매핑, 쿼리 생성 및 실행
 - [x] 요구사항 2 - EntityManager의 책임 줄여주기
+
 ## Step4 
 - [x] 요구사항 1 -  find
 - [x] 요구사항 2 -  persist (insert)
@@ -11,6 +16,7 @@
   - [x] clause를 접미사로 갖도록 클래스명 변경
   - [x] Generic 제거
   - [x] 테스트 코드 추가, 테스트가 용이하도록 코드 변경
+
 ## Step3
 - [x] 요구사항 1 - insert 쿼리 구현하기
 - [x] 요구사항 2 - findAll 기능 구현하기

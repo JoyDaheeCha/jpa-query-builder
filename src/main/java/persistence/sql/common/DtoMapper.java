@@ -29,6 +29,7 @@ public class DtoMapper<T> implements RowMapper<T> {
         return dto;
     }
 
+    // TODO: (질문) metaData를 쓰지 않고 아래처럼 구현했는데 metaData를 활용해야하는 이유가 있을까요-?
     private T getDto(ResultSet resultSet) throws InstantiationException, IllegalAccessException,
             InvocationTargetException, NoSuchMethodException, SQLException {
         T dto;

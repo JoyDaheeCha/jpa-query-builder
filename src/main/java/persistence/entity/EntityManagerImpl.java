@@ -8,19 +8,17 @@ import persistence.sql.dml.InsertQueryBuilder;
 import persistence.sql.dml.SelectQueryBuilder;
 
 public class EntityManagerImpl<T> implements EntityManager<T>{
-
-    private final JdbcTemplate jdbcTemplate;
     private final EntityPersister entityPersister;
+    private final EntityLoader<T> entityLoader;
 
     public EntityManagerImpl(JdbcTemplate jdbcTemplate) {
-        this.jdbcTemplate = jdbcTemplate;
         this.entityPersister = new EntityPersister(jdbcTemplate);
+        this.entityLoader = new EntityLoader<>(jdbcTemplate);
     }
 
     @Override
     public T find(Class<T> clazz, Long id) {
-        String query = new SelectQueryBuilder(clazz).getFindById(id);
-        return jdbcTemplate.queryForObject(query, new DtoMapper<>(clazz));
+        return entityLoader.find(clazz, id);
     }
 
     @Override
