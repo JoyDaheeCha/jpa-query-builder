@@ -49,9 +49,9 @@ public class PrimaryKeyClause {
 
     private static Long getValue(Class<?> entity, Field field) {
         try {
-            return (Long) field.get(entity);
+            return (Long) field. get(entity);
         } catch (IllegalAccessException e) {
-            throw new InvalidPrimaryKeyException();
+            return null;
         }
     }
 
